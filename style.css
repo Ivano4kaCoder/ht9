@@ -160,4 +160,6 @@ button {
     padding: 5px;
     top: -10px;
     left: -6px;
+    font-size: 12px;
+    text-align: center;
 }
