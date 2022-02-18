@@ -178,6 +178,7 @@ input {
     left: -6px;
     font-size: 12px;
     text-align: center;
+    color: white;
 }
 
 .slider {
@@ -190,7 +191,6 @@ input {
 }
 
 .breadcrumbs li {
-    
     float: left;
 }
 
@@ -221,6 +221,7 @@ input {
     display: inline-block;
     background-image: url(images/right_arrow_icon.png);
     background-repeat: no-repeat;
+    position: absolute;
 }
 
 h1 {
@@ -378,9 +379,83 @@ h1 {
     border: none;
 }
 
-
-
 .product {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.btn-add-to-cart {
+    position: relative;
+}
+
+.btn-icon {
+    background-image: url(images/bascket-white.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    color: white;
+    font-size: 21px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: white;
+}
+
+.checkbox {
+        margin-top: 10px;
+        height: 30px;
+}
+
+.filter {
+    padding-top: 0px ;
+    padding-left: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+h3 {
+    color: white;
+    font-size: 21px;
+}
+
+.filter-show-more {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.filter-type {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
