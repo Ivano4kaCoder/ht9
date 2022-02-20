@@ -371,7 +371,7 @@ h1 {
 }
 .btn:hover {
     background-color: #568dc6;
-    border: none;
+    border: 1px solid transparent;
 }
 
 .product {
